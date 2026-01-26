@@ -45,7 +45,7 @@ In the CopilotKit ecosystem, Generative UI is approached in three practical patt
 
 [AG-UI (Agent-User Interaction Protocol)](https://github.com/ag-ui-protocol/ag-ui) serves as the bidirectional runtime interaction layer beneath these patterns, providing the agent ↔ application connection that enables Generative UI and works uniformly across A2UI, MCP Apps, Open-JSON-UI, and custom UI specifications.
 
-<img width="706" height="665" alt="AG-UI" src="https://github.com/user-attachments/assets/2549049e-9b79-49bd-98c2-8b38b76610ad" />
+<img width="706" height="665" alt="AG-UI and A2UI" src="https://github.com/user-attachments/assets/1b895486-6b2e-4981-8c00-c54fe71b3f35" />
 
 <br />
 
@@ -171,8 +171,6 @@ const agent = new BuiltInAgent({
 - Docs: [docs.copilotkit.ai/generative-ui](https://docs.copilotkit.ai/generative-ui)
 - MCP Apps spec: [docs.copilotkit.ai/generative-ui-specs/mcp-apps](https://docs.copilotkit.ai/generative-ui-specs/mcp-apps)
 - Practical guide (complete integration flow): [Bring MCP Apps into your OWN app with CopilotKit & AG-UI](https://www.copilotkit.ai/blog/bring-mcp-apps-into-your-own-app-with-copilotkit-and-ag-ui)
-
-https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ---
 
