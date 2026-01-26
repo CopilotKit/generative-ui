@@ -21,6 +21,8 @@
 
   <p>Build apps that adapt to your users.</p>
 
+https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
+
   <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/a8357fdd-5477-418c-886d-2ca169c54a28" />
 
 </div>
