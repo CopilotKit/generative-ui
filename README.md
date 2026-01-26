@@ -33,9 +33,9 @@ This repository walks through how agentic UI protocols (AG-UI, A2UI, MCP Apps) e
 
 ## What is Generative UI?
 
-Generative UI is a pattern where parts of the user interface are generated, selected or controlled by an AI agent at runtime, rather than being fully predefined by developers.
+Generative UI is a pattern in which parts of the user interface are generated, selected, or controlled by an AI agent at runtime rather than being fully predefined by developers.
 
-Instead of only generating text, agents can send UI state, structured UI specs or interactive UI blocks that the frontend renders in real time. This turns UI from fixed, developer-defined screens into an interface that adapts as the agent works and as context changes.
+Instead of only generating text, agents can send UI state, structured UI specs, or interactive UI blocks that the frontend renders in real time. This turns UI from fixed, developer-defined screens into an interface that adapts as the agent works and as context changes.
 
 In the CopilotKit ecosystem, Generative UI is approached in three practical patterns, implemented using different agentic UI protocols and specifications that define how agents communicate UI updates to applications:
 
@@ -43,7 +43,7 @@ In the CopilotKit ecosystem, Generative UI is approached in three practical patt
 - Declarative Generative UI → [A2UI](https://docs.copilotkit.ai/generative-ui-specs/a2ui), [Open-JSON-UI](https://docs.copilotkit.ai/generative-ui-specs/open-json-ui)
 - Open-ended Generative UI → [MCP Apps](https://docs.copilotkit.ai/generative-ui-specs/mcp-apps) / Custom UIs
 
-[AG-UI (Agent-User Interaction Protocol)](https://github.com/ag-ui-protocol/ag-ui) acts as the bi-directional runtime interaction layer underneath these patterns, providing the agent ↔ application connection that enables Generative UI and works uniformly across A2UI, MCP Apps, Open-JSON-UI and custom UI specifications.
+[AG-UI (Agent-User Interaction Protocol)](https://github.com/ag-ui-protocol/ag-ui) serves as the bidirectional runtime interaction layer beneath these patterns, providing the agent ↔ application connection that enables Generative UI and works uniformly across A2UI, MCP Apps, Open-JSON-UI, and custom UI specifications.
 
 <img width="800" alt="AG-UI" src="https://github.com/user-attachments/assets/06ee6d3e-58ca-4ec5-bd9d-6982953150c7" />
 
@@ -55,9 +55,12 @@ The rest of this repo walks through each pattern from most constrained to most o
 
 ## Static Generative UI (AG-UI)
 
-Static Generative UI means you pre-build UI components and the agent chooses which component to show and passes it the data it needs. 
+<img width="971" height="541" alt="image" src="https://github.com/user-attachments/assets/7d503eed-7593-4966-8699-d9e43002a893" />
 
-This is the most controlled approach: you own the layout, styling and interaction patterns, while the agent controls when and which UI appears.
+
+Static Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs. 
+
+This is the most controlled approach: you own the layout, styling, and interaction patterns, while the agent controls when and which UI appears.
 
 A common CopilotKit pattern is to `render` UI for an action based on its status using `useCopilotAction` (for example, show a loading view while args stream, then show the final component).
 
@@ -94,6 +97,9 @@ export function ShowCalendarMeetingAction() {
 ---
 
 ## Declarative Generative UI (A2UI + Open‑JSON‑UI)
+
+<img width="963" height="532" alt="image" src="https://github.com/user-attachments/assets/ef1ecf59-f4d4-40ac-9d9d-c1a929405a6e" />
+
 
 Declarative Generative UI sits between static and open-ended approaches. Here, the agent returns a structured UI description (cards, lists, forms, widgets) and the frontend renders it.
 
@@ -136,11 +142,14 @@ For example, an agent can respond with an Open‑JSON‑UI payload that describe
 
 ## Open-ended Generative UI (MCP Apps)
 
-Open-ended Generative UI is when the agent can return a complete UI surface (often HTML/iframes/free-form content) and the frontend mostly acts as a container that displays it.
+<img width="970" height="545" alt="image" src="https://github.com/user-attachments/assets/cb6e7950-0ef2-4a3c-aa17-bca2d1dde824" />
 
-The tradeoffs are higher: security/performance concerns when rendering arbitrary content, harder styling consistency and reduced portability outside the web.
 
-This pattern is commonly used for MCP Apps. In CopilotKit, MCP Apps support is added by attaching `MCPAppsMiddleware` to your agent, which lets the runtime connect to one or more MCP Apps servers.
+Open-ended Generative UI is when the agent returns a complete UI surface (often HTML/iframes/free-form content), and the frontend mostly serves as a container to display it.
+
+The trade-offs are higher: security/performance concerns when rendering arbitrary content, inconsistent styling, and reduced portability outside the web.
+
+This pattern is commonly used for MCP Apps. In CopilotKit, MCP Apps support is enabled by attaching `MCPAppsMiddleware` to your agent, which allows the runtime to connect to one or more MCP Apps servers.
 
 ```typescript
 import { BuiltInAgent } from "@copilotkit/runtime/v2";
