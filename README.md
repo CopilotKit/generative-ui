@@ -23,8 +23,6 @@
 
 https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
-  <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/a8357fdd-5477-418c-886d-2ca169c54a28" />
-
 </div>
 
 <br />
@@ -47,7 +45,7 @@ In the CopilotKit ecosystem, Generative UI is approached in three practical patt
 
 [AG-UI (Agent-User Interaction Protocol)](https://github.com/ag-ui-protocol/ag-ui) serves as the bidirectional runtime interaction layer beneath these patterns, providing the agent ↔ application connection that enables Generative UI and works uniformly across A2UI, MCP Apps, Open-JSON-UI, and custom UI specifications.
 
-<img width="800" alt="AG-UI" src="https://github.com/user-attachments/assets/06ee6d3e-58ca-4ec5-bd9d-6982953150c7" />
+<img width="706" height="665" alt="AG-UI" src="https://github.com/user-attachments/assets/2549049e-9b79-49bd-98c2-8b38b76610ad" />
 
 <br />
 
@@ -58,7 +56,6 @@ The rest of this repo walks through each pattern from most constrained to most o
 ## Static Generative UI (AG-UI)
 
 <img width="971" height="541" alt="image" src="https://github.com/user-attachments/assets/7d503eed-7593-4966-8699-d9e43002a893" />
-
 
 Static Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs. 
 
@@ -102,7 +99,6 @@ export function ShowCalendarMeetingAction() {
 
 <img width="963" height="532" alt="image" src="https://github.com/user-attachments/assets/ef1ecf59-f4d4-40ac-9d9d-c1a929405a6e" />
 
-
 Declarative Generative UI sits between static and open-ended approaches. Here, the agent returns a structured UI description (cards, lists, forms, widgets) and the frontend renders it.
 
 Two common declarative specifications used for Generative UI are A2UI and Open-JSON-UI.
@@ -130,8 +126,7 @@ For example, an agent can respond with an Open‑JSON‑UI payload that describe
   }
 }
 ```
-
-<img width="1038" height="337" alt="Open-JSON-UI" src="https://github.com/user-attachments/assets/67b82b6e-e272-406e-a5b6-d5b14a9bcfd6" />
+<img width="1038" height="337" alt="Open-JSON-UI" src="https://github.com/user-attachments/assets/2033a2d0-a22b-416b-8726-b57700851862" />
 
 - Try it out: [go.copilotkit.ai/gen-ui-demo](https://go.copilotkit.ai/gen-ui-demo)
 - Docs: [docs.copilotkit.ai/generative-ui](https://docs.copilotkit.ai/generative-ui)
@@ -145,7 +140,6 @@ For example, an agent can respond with an Open‑JSON‑UI payload that describe
 ## Open-ended Generative UI (MCP Apps)
 
 <img width="970" height="545" alt="image" src="https://github.com/user-attachments/assets/cb6e7950-0ef2-4a3c-aa17-bca2d1dde824" />
-
 
 Open-ended Generative UI is when the agent returns a complete UI surface (often HTML/iframes/free-form content), and the frontend mostly serves as a container to display it.
 
@@ -178,7 +172,7 @@ const agent = new BuiltInAgent({
 - MCP Apps spec: [docs.copilotkit.ai/generative-ui-specs/mcp-apps](https://docs.copilotkit.ai/generative-ui-specs/mcp-apps)
 - Practical guide (complete integration flow): [Bring MCP Apps into your OWN app with CopilotKit & AG-UI](https://www.copilotkit.ai/blog/bring-mcp-apps-into-your-own-app-with-copilotkit-and-ag-ui)
 
-https://github.com/user-attachments/assets/585add6a-a37a-4a09-a009-a353591c2101
+https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ---
 
@@ -194,7 +188,7 @@ Get Started:
 - Try it out: [go.copilotkit.ai/gen-ui-demo](https://go.copilotkit.ai/gen-ui-demo)
 - Repo: [go.copilotkit.ai/gen-ui-repo-playground](https://go.copilotkit.ai/gen-ui-repo-playground)
 
-https://github.com/user-attachments/assets/0e2d9f3b-16c5-4556-bc10-fe0643cebdc3
+https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ---
 
