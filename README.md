@@ -25,9 +25,9 @@
   ## Generative UI Resources
 
 - [What is Generative UI?](#what-is-generative-ui)
-- [Static Generative UI (AG-UI)](#static-generative-ui-ag-ui)
-- [Declarative Generative UI (A2UI + Open-JSON-UI)](#declarative-generative-ui-a2ui--open-json-ui)
-- [Open-ended Generative UI (MCP Apps)](#open-ended-generative-ui-mcp-apps)
+  - [Static Generative UI (AG-UI)](#static-generative-ui-ag-ui)
+  - [Declarative Generative UI (A2UI + Open-JSON-UI)](#declarative-generative-ui-a2ui--open-json-ui)
+  - [Open-ended Generative UI (MCP Apps)](#open-ended-generative-ui-mcp-apps)
 - [Generative UI Playground](#generative-ui-playground)
 - [Blogs](#generative-ui-playground)
 - [Contributing](#-contributions-are-welcome)
