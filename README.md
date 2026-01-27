@@ -31,6 +31,8 @@
   - [Open-ended Generative UI (MCP Apps)](#open-ended-generative-ui-mcp-apps)
 - [Generative UI Playground](#generative-ui-playground)
 - [Blogs](#generative-ui-playground)
+- [Videos](#generative-ui-playground)
+- [Additional resources](#generative-ui-playground)
 - [Contributing](#-contributions-are-welcome)
 
 
