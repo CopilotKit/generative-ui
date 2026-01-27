@@ -67,6 +67,8 @@ The rest of this repo walks through each pattern from most constrained to most o
 
 ---
 
+# The 3 Types of Generative UI
+
 ## Static Generative UI (AG-UI)
 
 <img width="977" height="548" alt="image" src="https://github.com/user-attachments/assets/54b3fcf3-c6f3-4ab4-9ea4-174dd9abdce9" />
