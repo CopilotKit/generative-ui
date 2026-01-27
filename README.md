@@ -31,7 +31,7 @@
   - [Open-ended Generative UI (MCP Apps)](#open-ended-generative-ui-mcp-apps)
 - [Generative UI Playground](#generative-ui-playground)
 - [Blogs](#blogs)
-- [Videos](#generative-ui-playground)
+- [Videos](#videos)
 - [Additional resources](#generative-ui-playground)
 - [Contributing](#-contributions-are-welcome)
 
@@ -219,6 +219,15 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 - [From products to systems: The agentic AI shift](https://uxdesign.cc/from-products-to-systems-the-agentic-ai-shift-eaf6a7180c43)
 - [Generative UI: A rich, custom, visual interactive user experience for any prompt](https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/)
 - [The State of Agentic UI: Comparing AG-UI, MCP-UI, and A2A Protocols](https://www.copilotkit.ai/blog/the-state-of-agentic-ui-comparing-ag-ui-mcp-ui-and-a2ui-protocols)
+
+## Videos
+
+- [Agentic AI Explained So Anyone Can Get It!](https://www.youtube.com/watch?v=Jj1-zb38Yfw)
+- [Generative vs Agentic AI: Shaping the Future of AI Collaboration](https://www.youtube.com/watch?v=EDb37y_MhRw)
+- [What is Agentic AI? An Easy Explanation For Everyone](https://www.youtube.com/watch?v=-pqzyvRp3Tc)
+- [What is Agentic AI and How Does it Work?](https://www.youtube.com/watch?v=15_pppse4fY)
+
+
 
 ---
 
