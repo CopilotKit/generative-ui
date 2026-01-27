@@ -75,29 +75,37 @@ Static Generative UI means you pre-build UI components, and the agent chooses wh
 
 This is the most controlled approach: you own the layout, styling, and interaction patterns, while the agent controls when and which UI appears.
 
-A common CopilotKit pattern is to `render` UI for an action based on its status using `useCopilotAction` (for example, show a loading view while args stream, then show the final component).
+In CopilotKit, this pattern is implemented using the `useFrontendTool` hook, which lets the application register the `get_weather` tool and define how predefined React UI is rendered across each phase of the tool’s execution lifecycle.
 
 ```typescript
-"use client";
-import { useCopilotAction } from "@copilotkit/react-core";
-
-export function ShowCalendarMeetingAction() {
-  useCopilotAction({
-    name: "showCalendarMeeting",
-    description: "Displays calendar meeting information",
-    parameters: [
-      { name: "date", type: "string", required: true },
-      { name: "time", type: "string", required: true },
-      { name: "meetingName", type: "string", required: false },
-    ],
-    render: ({ status, args }) => {
-      if (status === "inProgress") return <LoadingView />;
-      return <CalendarMeetingCardComponent {...args} />;
-    },
-  });
-
-  return null;
-}
+// Weather tool - callable tool that displays weather data in a styled card
+useFrontendTool({
+  name: "get_weather",
+  description: "Get current weather information for a location",
+  parameters: z.object({ location: z.string().describe("The city or location to get weather for") }),
+  handler: async ({ location }) => {
+    await new Promise((r) => setTimeout(r, 500));
+    return getMockWeather(location);
+  },
+  render: ({ status, args, result }) => {
+    if (status === "inProgress" || status === "executing") {
+      return <WeatherLoadingState location={args?.location} />;
+    }
+    if (status === "complete" && result) {
+      const data = JSON.parse(result) as WeatherData;
+      return (
+        <WeatherCard
+          location={data.location}
+          temperature={data.temperature}
+          conditions={data.conditions}
+          humidity={data.humidity}
+          windSpeed={data.windSpeed}
+        />
+      );
+    }
+    return <></>;
+  },
+});
 ```
 
 - Try it out: [go.copilotkit.ai/gen-ui-demo](https://go.copilotkit.ai/gen-ui-demo)
