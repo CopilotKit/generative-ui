@@ -32,6 +32,7 @@
 - [Generative UI Playground](#generative-ui-playground)
 - [Blogs](#blogs)
 - [Videos](#videos)
+- [Additional Resources](#additional-resources)
 - [Contributing](#-contributions-are-welcome)
 
 https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
@@ -277,6 +278,9 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 - [Generative vs Agentic AI: Shaping the Future of AI Collaboration](https://www.youtube.com/watch?v=EDb37y_MhRw)
 - [What is Agentic AI? An Easy Explanation For Everyone](https://www.youtube.com/watch?v=-pqzyvRp3Tc)
 - [What is Agentic AI and How Does it Work?](https://www.youtube.com/watch?v=15_pppse4fY)
+
+## Additional Resources
+- [Generative UI PDF Download](https://go.copilotkit.ai/generative-ui-pdf-guide)
 
 ---
 
