@@ -32,7 +32,6 @@
 - [Generative UI Playground](#generative-ui-playground)
 - [Blogs](#blogs)
 - [Videos](#videos)
-- [Additional resources](#generative-ui-playground)
 - [Contributing](#-contributions-are-welcome)
 
 
@@ -42,6 +41,8 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 <br />
 
 This repository walks through how agentic UI protocols (AG-UI, A2UI, MCP Apps) enable Generative UI patterns (Static, Declarative, Open-ended) and how to implement them using CopilotKit.
+
+👉 [Generative UI Guide (PDF)](assets/generative-ui-guide.pdf) - a conceptual overview of Generative UI, focused on trade-offs, UI surfaces and how agentic UI protocols work together.
 
 ---
 
