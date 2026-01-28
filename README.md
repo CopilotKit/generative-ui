@@ -22,7 +22,7 @@
   <p>Build apps that adapt to your users.</p>
 </div>
 
-  ## Generative UI Resources
+## Generative UI Resources
 
 - [What is Generative UI?](#what-is-generative-ui)
 - [The 3 types of Generative UI](#the-3-types-of-generative-ui)
@@ -33,8 +33,6 @@
 - [Blogs](#blogs)
 - [Videos](#videos)
 - [Contributing](#-contributions-are-welcome)
-
-
 
 https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
@@ -60,7 +58,7 @@ In the CopilotKit ecosystem, Generative UI is approached in three practical patt
 
 [AG-UI (Agent-User Interaction Protocol)](https://github.com/ag-ui-protocol/ag-ui) serves as the bidirectional runtime interaction layer beneath these patterns, providing the agent ↔ application connection that enables Generative UI and works uniformly across A2UI, MCP Apps, Open-JSON-UI, and custom UI specifications.
 
-<img width="706" height="665" alt="AG-UI and A2UI" src="https://github.com/user-attachments/assets/1b895486-6b2e-4981-8c00-c54fe71b3f35" />
+<img width="706" height="665" alt="AG-UI and A2UI architecture" src="assets/ag-ui-a2ui-architecture.png" />
 
 <br />
 
@@ -72,9 +70,9 @@ The rest of this repo walks through each pattern from most constrained to most o
 
 ## Static Generative UI (AG-UI)
 
-<img width="977" height="548" alt="image" src="https://github.com/user-attachments/assets/54b3fcf3-c6f3-4ab4-9ea4-174dd9abdce9" />
+<img width="977" height="548" alt="Static Generative UI example" src="assets/static-generative-ui-example.png" />
 
-Static Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs. 
+Static Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs.
 
 This is the most controlled approach: you own the layout, styling, and interaction patterns, while the agent controls when and which UI appears.
 
@@ -120,21 +118,21 @@ useFrontendTool({
 
 ## Declarative Generative UI (A2UI + Open‑JSON‑UI)
 
-<img width="963" height="532" alt="image" src="https://github.com/user-attachments/assets/ef1ecf59-f4d4-40ac-9d9d-c1a929405a6e" />
+<img width="963" height="532" alt="Declarative Generative UI overview" src="assets/declarative-generative-ui-overview.png" />
 
 Declarative Generative UI sits between static and open-ended approaches. Here, the agent returns a structured UI description (cards, lists, forms, widgets) and the frontend renders it.
 
 Two common declarative specifications used for Generative UI are A2UI and Open-JSON-UI.
 
-1) [A2UI](https://github.com/google/A2UI) → declarative Generative UI spec from Google, described as JSONL-based and streaming, designed for platform-agnostic rendering
+1. [A2UI](https://github.com/google/A2UI) → declarative Generative UI spec from Google, described as JSONL-based and streaming, designed for platform-agnostic rendering
 
-2) [Open‑JSON‑UI](https://docs.copilotkit.ai/generative-ui/specs/open-json-ui) → open standardization of OpenAI’s internal declarative Generative UI schema
+2. [Open‑JSON‑UI](https://docs.copilotkit.ai/generative-ui/specs/open-json-ui) → open standardization of OpenAI’s internal declarative Generative UI schema
 
-Let's first understand the basic flow of how to implement A2UI. 
+Let's first understand the basic flow of how to implement A2UI.
 
 Instead of writing A2UI JSON by hand, you can use the [A2UI Composer](https://a2ui-composer.ag-ui.com/) to generate the spec for you. Copy the output and paste it into your agent’s prompt as a reference template.
 
-<img width="1358" height="608" alt="A2UI Composer" src="https://github.com/user-attachments/assets/b814f27e-bb0b-4389-b739-2e1ea13f4b57" />
+<img width="1358" height="608" alt="A2UI Composer" src="assets/a2ui-composer.png" />
 
 In `prompt_builder.py`, add one A2UI JSONL example so the agent learns the three message envelopes A2UI expects: `surfaceUpdate` (components), `dataModelUpdate` (state), then `beginRendering` (render signal).
 
@@ -203,7 +201,8 @@ The pattern is the same for Open‑JSON‑UI. An agent can respond with an Open�
   }
 }
 ```
-<img width="1038" height="337" alt="Open-JSON-UI" src="https://github.com/user-attachments/assets/2033a2d0-a22b-416b-8726-b57700851862" />
+
+<img width="1038" height="337" alt="Open-JSON-UI example" src="assets/open-json-ui-card-example.png" />
 
 - Try it out: [go.copilotkit.ai/gen-ui-demo](https://go.copilotkit.ai/gen-ui-demo)
 - Docs: [docs.copilotkit.ai/generative-ui](https://docs.copilotkit.ai/generative-ui)
@@ -216,7 +215,7 @@ The pattern is the same for Open‑JSON‑UI. An agent can respond with an Open�
 
 ## Open-ended Generative UI (MCP Apps)
 
-<img width="970" height="545" alt="image" src="https://github.com/user-attachments/assets/cb6e7950-0ef2-4a3c-aa17-bca2d1dde824" />
+<img width="970" height="545" alt="Open-ended Generative UI example" src="assets/open-ended-generative-ui-mcp-apps.png" />
 
 Open-ended Generative UI is when the agent returns a complete UI surface (often HTML/iframes/free-form content), and the frontend mostly serves as a container to display it.
 
@@ -232,16 +231,16 @@ const agent = new BuiltInAgent({
   model: "openai/gpt-4o",
   prompt: "You are a helpful assistant.",
 }).use(
-   new MCPAppsMiddleware({
+  new MCPAppsMiddleware({
     mcpServers: [
       {
         type: "http",
         url: "http://localhost:3108/mcp",
-        serverId: "my-server" // Recommended: stable identifier
+        serverId: "my-server", // Recommended: stable identifier
       },
     ],
   }),
-)
+);
 ```
 
 - Try it out: [go.copilotkit.ai/gen-ui-demo](https://go.copilotkit.ai/gen-ui-demo)
@@ -279,7 +278,6 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 - [What is Agentic AI? An Easy Explanation For Everyone](https://www.youtube.com/watch?v=-pqzyvRp3Tc)
 - [What is Agentic AI and How Does it Work?](https://www.youtube.com/watch?v=15_pppse4fY)
 
-
 ---
 
 ## 🤝 Contributions are welcome
@@ -288,9 +286,9 @@ Contributions welcome: PRs adding examples (Static/Declarative/Open‑ended), im
 
 [Discord](https://discord.com/invite/6dffbvGU3D) for help and discussions. [GitHub](https://github.com/CopilotKit/CopilotKit) to contribute. [@CopilotKit](https://x.com/copilotkit) for updates.
 
-| Project | Preview | Description | Links |
-| ------- | ------- | ----------- | ----- |
-| Generative UI Playground | <img src="https://github.com/user-attachments/assets/7e34dc2f-ba49-416d-9726-b3a5efa0223a" alt="genui demo app" width="300"> | Shows the three Gen UI patterns with runnable, end-to-end examples. | [Repo](https://go.copilotkit.ai/gen-ui-repo-playground)<br>[Demo](go.copilotkit.ai/gen-ui-demo) |
+| Project                  | Preview                                                                                                    | Description                                                         | Links                                                                                           |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Generative UI Playground | <img src="assets/generative-ui-playground-preview.png" alt="Generative UI playground preview" width="300"> | Shows the three Gen UI patterns with runnable, end-to-end examples. | [Repo](https://go.copilotkit.ai/gen-ui-repo-playground)<br>[Demo](go.copilotkit.ai/gen-ui-demo) |
 
 Built something? [Open a PR](https://github.com/CopilotKit/CopilotKit/pulls) or [share it in Discord](https://discord.com/invite/6dffbvGU3D).
 
