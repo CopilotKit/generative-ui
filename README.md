@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🔮 Generative UI SDK for Agentic Apps</h1>
+  <h1>🔮 Generative UI for Agentic Apps</h1>
 
   <p>
     <a href="https://www.copilotkit.ai/generative-ui">
