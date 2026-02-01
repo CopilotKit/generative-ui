@@ -274,6 +274,7 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ## Videos
 
+- [Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)](https://www.youtube.com/watch?v=Z4aSGCs_O5A)
 - [Agentic AI Explained So Anyone Can Get It!](https://www.youtube.com/watch?v=Jj1-zb38Yfw)
 - [Generative vs Agentic AI: Shaping the Future of AI Collaboration](https://www.youtube.com/watch?v=EDb37y_MhRw)
 - [What is Agentic AI? An Easy Explanation For Everyone](https://www.youtube.com/watch?v=-pqzyvRp3Tc)
@@ -281,6 +282,8 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ## Additional Resources
 - [Generative UI PDF Download](https://go.copilotkit.ai/generative-ui-pdf-guide)
+- [Agentic Protocols Landscape](https://go.copilotkit.ai/protocols)
+- [12 Dos and Donts for Building Agentic Applications](https://go.copilotkit.ai/dos-donts)
 
 ---
 
