@@ -274,16 +274,16 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ## Videos
 
-- [Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)](https://www.youtube.com/watch?v=Z4aSGCs_O5A)
+- [AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)](https://www.youtube.com/watch?v=MD8VQzvMVek)
 - [Agentic AI Explained So Anyone Can Get It!](https://www.youtube.com/watch?v=Jj1-zb38Yfw)
 - [Generative vs Agentic AI: Shaping the Future of AI Collaboration](https://www.youtube.com/watch?v=EDb37y_MhRw)
+- [Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)](https://www.youtube.com/watch?v=Z4aSGCs_O5A)
 - [What is Agentic AI? An Easy Explanation For Everyone](https://www.youtube.com/watch?v=-pqzyvRp3Tc)
 - [What is Agentic AI and How Does it Work?](https://www.youtube.com/watch?v=15_pppse4fY)
-- [AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)](https://www.youtube.com/watch?v=MD8VQzvMVek)
 
 ## Additional Resources
-- [Generative UI PDF Download](https://go.copilotkit.ai/generative-ui-pdf-guide)
 - [Agentic Protocols Landscape](https://go.copilotkit.ai/protocols)
+- [Generative UI PDF Download](https://go.copilotkit.ai/generative-ui-pdf-guide)
 - [12 Dos and Donts for Building Agentic Applications](https://go.copilotkit.ai/dos-donts)
 
 ---
