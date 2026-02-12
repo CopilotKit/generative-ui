@@ -71,7 +71,7 @@ The rest of this repo walks through each pattern from most constrained to most o
 
 ## 1. Controlled Generative UI (AG-UI)
 
-<img width="977" height="548" alt="controlled Generative UI example" src="assets/controlled-generative-ui-example.png" />
+<img width="977" height="548" alt="controlled Generative UI example" src="assets/static-generative-ui-example.png" />
 
 Controlled Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs.
 
