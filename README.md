@@ -26,7 +26,7 @@
 
 - [What is Generative UI?](#what-is-generative-ui)
 - [The 3 types of Generative UI](#the-3-types-of-generative-ui)
-  - [Static Generative UI (AG-UI)](#static-generative-ui-ag-ui)
+  - [Controlled Generative UI (AG-UI)](#controlled-generative-ui-ag-ui)
   - [Declarative Generative UI (A2UI + Open-JSON-UI)](#declarative-generative-ui-a2ui--openjsonui)
   - [Open-ended Generative UI (MCP Apps)](#open-ended-generative-ui-mcp-apps)
 - [Generative UI Playground](#generative-ui-playground)
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 <br />
 
-This repository walks through how agentic UI protocols (AG-UI, A2UI, MCP Apps) enable Generative UI patterns (Static, Declarative, Open-ended) and how to implement them using CopilotKit.
+This repository walks through how agentic UI protocols (AG-UI, A2UI, MCP Apps) enable Generative UI patterns (Controlled, Declarative, Open-ended) and how to implement them using CopilotKit.
 
 👉 [Generative UI Guide (PDF)](assets/generative-ui-guide.pdf) - a conceptual overview of Generative UI, focused on trade-offs, UI surfaces and how agentic UI protocols work together.
 
@@ -53,7 +53,7 @@ Instead of only generating text, agents can send UI state, structured UI specs, 
 
 In the CopilotKit ecosystem, Generative UI is approached in three practical patterns, implemented using different agentic UI protocols and specifications that define how agents communicate UI updates to applications:
 
-- Static Generative UI (high control, low freedom) → AG-UI
+- Controlled Generative UI (high control, low freedom) → AG-UI
 - Declarative Generative UI (shared control) → [A2UI](https://docs.copilotkit.ai/generative-ui/specs/a2ui), [Open-JSON-UI](https://docs.copilotkit.ai/generative-ui/specs/open-json-ui)
 - Open-ended Generative UI (low control, high freedom) → [MCP Apps](https://docs.copilotkit.ai/generative-ui/specs/mcp-apps) / Custom UIs
 
@@ -69,11 +69,11 @@ The rest of this repo walks through each pattern from most constrained to most o
 
 # The 3 Types of Generative UI
 
-## 1. Static Generative UI (AG-UI)
+## 1. Controlled Generative UI (AG-UI)
 
-<img width="977" height="548" alt="Static Generative UI example" src="assets/static-generative-ui-example.png" />
+<img width="977" height="548" alt="controlled Generative UI example" src="assets/controlled-generative-ui-example.png" />
 
-Static Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs.
+Controlled Generative UI means you pre-build UI components, and the agent chooses which component to show and passes it the data it needs.
 
 This is the most controlled approach: you own the layout, styling, and interaction patterns, while the agent controls when and which UI appears.
 
@@ -121,7 +121,7 @@ useFrontendTool({
 
 <img width="963" height="532" alt="Declarative Generative UI overview" src="assets/declarative-generative-ui-overview.png" />
 
-Declarative Generative UI sits between static and open-ended approaches. Here, the agent returns a structured UI description (cards, lists, forms, widgets) and the frontend renders it.
+Declarative Generative UI sits between controlled and open-ended approaches. Here, the agent returns a structured UI description (cards, lists, forms, widgets) and the frontend renders it.
 
 Two common declarative specifications used for Generative UI are A2UI and Open-JSON-UI.
 
@@ -269,7 +269,7 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 - [From products to systems: The agentic AI shift](https://uxdesign.cc/from-products-to-systems-the-agentic-ai-shift-eaf6a7180c43) - UX Collective
 - [Generative UI: A rich, custom, visual interactive user experience for any prompt](https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/) - Google Research
 - [The State of Agentic UI: Comparing AG-UI, MCP-UI, and A2A Protocols](https://www.copilotkit.ai/blog/the-state-of-agentic-ui-comparing-ag-ui-mcp-ui-and-a2ui-protocols) - CopilotKit
-- [The Three Types of Generative UI: Static, Declarative and Fully Generated](https://www.copilotkit.ai/blog/the-three-kinds-of-generative-ui) - CopilotKit
+- [The Three Types of Generative UI: Controlled, Declarative and Fully Generated](https://www.copilotkit.ai/blog/the-three-kinds-of-generative-ui) - CopilotKit
 - [Generative UI Guide 2025: 15 Best Practices & Examples](https://www.mockplus.com/blog/post/gui-guide) - Mockplus
 
 ## Videos
@@ -290,7 +290,7 @@ https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
 ## 🤝 Contributions are welcome
 
-Contributions welcome: PRs adding examples (Static/Declarative/Open‑ended), improving explanations or adding assets.
+Contributions welcome: PRs adding examples (Controlled/Declarative/Open‑ended), improving explanations or adding assets.
 
 [Discord](https://discord.com/invite/6dffbvGU3D) for help and discussions. [GitHub](https://github.com/CopilotKit/CopilotKit) to contribute. [@CopilotKit](https://x.com/copilotkit) for updates.
 
