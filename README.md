@@ -260,6 +260,14 @@ The Generative UI Playground is a hands-on environment for exploring how all thr
 
 https://github.com/user-attachments/assets/f2f52fae-c9c6-4da5-8d29-dc99b202a7ad
 
+## Open Generative UI
+
+[Open Generative UI](https://github.com/CopilotKit/OpenGenerativeUI) is a viral open-source app where AI agents generate fully interactive visual components — algorithm visualizations, 3D animations, charts, and interactive widgets — all rendered in sandboxed iframes. Built with Next.js 16, React 19, LangGraph, and CopilotKit v2.
+
+https://github.com/user-attachments/assets/ed28c734-e54e-4412-873f-4801da544a7f
+
+- Repo: [github.com/CopilotKit/OpenGenerativeUI](https://github.com/CopilotKit/OpenGenerativeUI)
+
 ## Blogs
 
 - [Agent Factory: The new era of agentic AI: common use cases and design patterns](https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/) - By Microsoft Azure
@@ -299,6 +307,7 @@ Contributions welcome: PRs adding examples (Controlled/Declarative/Open‑ended)
 | Project                  | Preview                                                                                                    | Description                                                         | Links                                                                                           |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Generative UI Playground | <img src="assets/generative-ui-playground-preview.png" alt="Generative UI playground preview" width="300"> | Shows the three Gen UI patterns with runnable, end-to-end examples. | [Repo](https://go.copilotkit.ai/gen-ui-repo-playground)<br>[Demo](go.copilotkit.ai/gen-ui-demo) |
+| Open Generative UI | <video src="https://github.com/user-attachments/assets/ed28c734-e54e-4412-873f-4801da544a7f" width="300"></video> | Viral open-source app where AI agents generate fully interactive visual components (algorithm visualizations, 3D animations, charts) rendered in sandboxed iframes. Built with Next.js 16, React 19, LangGraph, and CopilotKit v2. | [Repo](https://github.com/CopilotKit/OpenGenerativeUI) |
 
 Built something? [Open a PR](https://github.com/CopilotKit/CopilotKit/pulls) or [share it in Discord](https://discord.com/invite/6dffbvGU3D).
 
