@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/copilotkit-generative-ui-badge.png)](https://mseep.ai/app/copilotkit-generative-ui)
+
 <div align="center">
   <h1>🔮 Generative UI for Agentic Apps</h1>
 
